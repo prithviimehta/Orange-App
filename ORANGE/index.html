@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+			/* background-color: black; */
+            background-image: url(wallpaper1.jpg);
+            background-size: cover; /* Cover the entire container */
+            background-repeat: no-repeat; /* Prevent repetition */
+            background-position: center;
+            background-color: black
+		}
+		nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+          }
+           nav ul li{
+            float: left;
+            margin-right: 20px; 
+
+           }
+            nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 15px 110.9px;
+            font-size: 25px;
+            display: inline-block;
+           }
+           nav ul li a:hover{
+            background-color: orange;
+            color: black;
+           }
+           nav ul li a.active{
+            background-color: grey;
+            color: black;
+        }
+        /* .navbar{
+            margin-right: 10%;
+        } */
+        .login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ed8b30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .login-button:hover {
+    background-color: #ed8b30;
+  }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            
+           <div class = "navbar">
+           <ul> 
+            <li>
+                <img src="logo1.png" width="410px" height="65px"> 
+            </li>
+            <li>
+                <a href="home.html"  >Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+           </ul>
+        </div>	
+    
+       </nav> 
+       </div>
+
+       <a href = "login.html" class="login-button">Login</a>
+</body>
+</html>

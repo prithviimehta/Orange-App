@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<style>
+		body{
+			/* background-color: black;*/
+            background-image: url(wallpaper1.jpg);
+            background-size: cover; /* Cover the entire container */
+            background-repeat: no-repeat; /* Prevent repetition */
+            background-position: center;
+            background-color: black;
+            color: white; 
+		}
+		
+		nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          }
+           nav ul li{
+            float: left;
+            margin-right: 20px; 
+            list-style-type: none;
+           }
+            nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 15px 110.9px;
+            font-size: 25px;
+            display: inline-block;
+           }
+           nav ul li a:hover{
+            background-color: orange;
+            color: black;
+           }
+           nav ul li a.active{
+            background-color: grey;
+            color: black;
+        }
+
+        td{
+            padding: 7px;
+        }
+        input {
+            height: 25px;
+   
+            border: none;
+        }
+        input:focus{
+            outline: none;
+            border: 1px solid lightblue; 
+        }
+        .form-div{
+            border: 2px solid white;
+            width: 800px;
+            box-shadow: 0 0 15px lightgoldenrodyellow;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"]{
+            height: 25px;
+            text-align: center;
+            border: 2px solid white;
+            margin: 5px;
+            font-size: 18px;
+            width: 200px;
+            border-radius: 15px;  
+            padding: 5px 40px ;
+        }
+        input[type="text"]:focus , 
+        input[type="email"]:focus,
+        input[type="number"]:focus{
+            outline: none;
+            background-color: orange;
+        }
+        .form-div{
+            display: flex;
+            text-align: center;
+        }
+        
+        .login-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ed8b30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .login-button:hover {
+    background-color: #ed8b30;
+  }
+
+	</style>
+         
+
+</head>
+<body>
+     <div>
+        <nav>
+            
+           <div class = "navbar">
+           <ul> 
+            <li>
+                <img src="logo1.png" width="410px" height="65px"> 
+            </li>
+            <li>
+                <a href="home.html"  >Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+           </ul>
+        </div>  
+    
+       </nav> 
+       </div>
+
+       <a href = "login.html" class="login-button">Login</a>
+   <br><br><br> <br><br>
+
+<h1 style="font-size: 55px;"><center>CONTACT US</center></h1>
+<br><br><br>
+<h1 style="font-size: 40px; font-family: Courier New, monospace;"><center>We will get back to you </center></h1>
+<br>
+<center>
+<div class="form-div">
+
+<form>
+<table width="100%">
+                  <tr>
+                       <td><input type="text" placeholder="Name"></td>
+                      <td><input type="email" placeholder="Email"></td> 
+                  </tr>
+                  <tr>
+                    <td><input type="Number" placeholder="Phone Number"></td>
+                  </tr>
+                   <tr>
+                      <td>
+                      <textarea rows="5" cols="45" placeholder="Comments"></textarea>
+                      </td>
+                  </tr>
+                  <tr><td><input type="submit" value="Send" name=""></td></tr>
+              </table>
+          </form>
+          </div>
+</center>
+</body>
+</html>

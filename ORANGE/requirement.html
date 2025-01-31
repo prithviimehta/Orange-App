@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+			/* background-color: black; */
+            background-image: url(wallpaper1.jpg);
+            background-size: cover; /* Cover the entire container */
+            background-repeat: no-repeat; /* Prevent repetition */
+            background-position: center;
+            background-color: black;
+            color: white;
+		}
+		nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+          }
+           nav ul li{
+            float: left;
+            margin-right: 20px; 
+
+           }
+            nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 15px 110.9px;
+            font-size: 25px;
+            display: inline-block;
+           }
+           nav ul li a:hover{
+            background-color: orange;
+            color: black;
+           }
+           nav ul li a.active{
+            background-color: grey;
+            color: black;
+        }
+        /* .navbar{
+            margin-right: 10%;
+        } */
+        .login-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ed8b30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .login-button:hover {
+    background-color: #ed8b30;
+  }
+
+
+  .option {
+    cursor: pointer;
+    padding: 10px;
+    /* margin: 50px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 70px;
+  }
+
+
+  .optionn {
+    cursor: pointer;
+    padding: 10px;
+    /* margin: 50px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 70px;
+  }
+  .selected {
+    background-color: green;
+    color: white;
+  }
+  .prop-type {
+    cursor: pointer;
+    padding: 10px;
+    /* margin: 50px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 70px;
+  }
+  h3{
+    color: #ed8b30;
+  }
+  .submit-button {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #ed8b30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+    </style>
+  
+</head>
+<body>
+    <div>
+        <nav>
+            
+           <div class = "navbar">
+           <ul> 
+            <li>
+                <img src="logo1.png" width="410px" height="65px"> 
+            </li>
+            <li>
+                <a href="home.html"  >Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+           </ul>
+        </div>	
+    
+       </nav> 
+       </div>
+
+       <a href = "login.html" class="login-button">Login</a>
+
+       <br><br><br><br><br>
+
+       <center><h1 style= "color: #1ABB00;">Requirement</h1></center>
+
+
+
+
+       <center><div id="option1" class="option" onclick="selectOption('option1')">Sale</div>
+<div id="option2" class="option" onclick="selectOption('option2')">Rent/Lease</div></center>
+
+<script>
+  function selectOption(optionId) {
+   
+    var options = document.getElementsByClassName('option');
+    for (var i = 0; i < options.length; i++) {
+      options[i].classList.remove('selected');
+    }
+
+    var selectedOption = document.getElementById(optionId);
+    selectedOption.classList.add('selected');
+  }
+</script><br>
+
+<center><div id="optionn1" class="optionn" onclick="selectOption('option1')">Residential</div>
+<div id="optionn2" class="optionn" onclick="selectOption('option2')">Commercial</div>
+<div id="optionn3" class="optionn" onclick="selectOption('option3')">Other</div></center>
+
+<script>
+  function selectOptionn(optionnId) {
+    // Remove selected class from all options
+    var optionns = document.getElementsByClassName('optionn');
+    for (var i = 0; i < options.length; i++) {
+      optionns[i].classList.remove('selected');
+    }
+
+    // Add selected class to the clicked option
+    var selectedOptionn = document.getElementById(optionnId);
+    selectedOptionn.classList.add('selected');
+  }
+</script>
+<br>
+
+<center><div class="prop-type">
+  <form>
+      <label>Choose Property Type</label>
+      <select>
+          <option>choose property</option>
+          <option>Villa/House</option>
+          <option>Plot/Land</option>
+          <option>Builder Floor</option>
+          <option>Flat</option>
+          <option>Duplex</option>
+      </select>
+  </form>
+</div></center>
+<br>
+<h3><center>Property Address</center></h3>
+<br>
+<center><div class="prop-type">
+  <form>
+      <label for="state">Select State:</label>
+      <select id="state" name="state">
+        <option value="">Select State</option>
+        <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Dadra & Nagar Haveli ">Dadra & Nagar Haveli</option>
+        <option value="Daman & Diu">Daman & Diu</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punducherry">Punducherry</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+      </select>
+  </form>
+</div></center>
+
+<br>
+<center><textarea class="prop-type" rows="1" cols="25" placeholder="Enter Locality"></textarea></center>
+
+<br>
+
+
+        <center><textarea  id="number" name="number" rows="1" cols="45" placeholder="Budget"></textarea></center>
+
+      <center><form>
+                    <h4> <input type="radio" id="lakhs" name="lakhs" value="lakhs">
+                    <label for="lakhs">Lakhs</label>
+        
+                    <input type="radio" id="crores" name="crores" value="crores">
+                    <label for="crores">Crores</label></h4><br></form></center>
+
+
+        <center><textarea id="textInput" name="textInput" rows="4" cols="50" maxlength="125" placeholder="Note- Additional information(if any)"></textarea>
+    
+    <p>Remaining characters: <span id="charCount">125</span></p>
+
+    <script>
+        
+        document.getElementById('textInput').addEventListener('input', function() {
+            const maxLength = 125;
+            const currentLength = this.value.length;
+            const remaining = maxLength - currentLength;
+            document.getElementById('charCount').textContent = remaining;
+        });
+    </script>
+
+    <form>
+
+     <button class ="submit-button " type="submit">POST</button>
+
+   </form></center>
+
+
+</body>
+</html>
+
